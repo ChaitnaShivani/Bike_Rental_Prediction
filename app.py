@@ -306,18 +306,11 @@ if submitted:
         "Prediction generated successfully using your trained model!"
     )
 
-    st.caption(
-        f"Machine Learning Model: {artifact['model_name']}"
-    )
 
     with st.expander("View normalized model inputs"):
         st.dataframe(input_data, use_container_width=True)
 
-    st.info(
-        "Note: This prediction is an estimate based on "
-        "historical bike rental patterns. Actual demand "
-        "may differ."
-    )
+
 
 # -------------------------------------------------
 # FOOTER
